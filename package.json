@@ -1,0 +1,9 @@
+{
+  "name": "analyze-react@013",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^0.14.9"
+  }
+}
