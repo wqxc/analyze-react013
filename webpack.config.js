@@ -1,4 +1,5 @@
 var config = {
+  mode:'development',
   entry: "./main.js",
   output: {
     path: "./build",

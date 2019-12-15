@@ -1,10 +1,17 @@
 import React from "react";
 import World from "./world";
 class App extends React.Component {
-  render() {
+  constructor(props) {
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
+  }
+  handleClick(){
+    console.log('xxxxx')
+  }
+  render(){
     return (
       <div>
-           <World />             Hello World!          
+           <World onClick={this.handleClick} />             Hello World!          
       </div>
     );
   }
