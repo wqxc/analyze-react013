@@ -10,9 +10,9 @@ class World extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div onClick={this.handleClick}>
         <div>this is world</div>
-        <World1 />
+        {/* <World1 /> */}
       </div>
     );
   }
