@@ -5,13 +5,13 @@ class App extends React.Component {
     super(props);
     this.handleClick = this.handleClick.bind(this);
   }
-  handleClick(){
-    console.log('xxxxx')
+  handleClick() {
+    console.log("APPPPPP");
   }
-  render(){
+  render() {
     return (
       <div>
-           <World onClick={this.handleClick} />             Hello World!          
+           <World />             Hello World!          
       </div>
     );
   }

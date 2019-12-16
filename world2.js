@@ -1,6 +1,6 @@
 import React from "react";
-import World2 from "./world2";
-class World1 extends React.Component {
+
+class World2 extends React.Component {
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
@@ -11,11 +11,10 @@ class World1 extends React.Component {
   render() {
     return (
       <button onClick={this.handleClick}>
-                      <div>this is World1 </div>
-        {/* <World2 />      */}
+                      <div>this is World2 </div>
       </button>
     );
   }
 }
 
-export default World1;
+export default World2;
