@@ -4,14 +4,29 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
+    this.fileChange = this.fileChange.bind(this);
+    this.state = {
+      count: 1
+    };
   }
   handleClick() {
-    console.log("APPPPPP");
+    this.handleState();
+    this.handleState();
+    this.handleState();
+  }
+  handleState() {
+    this.setState({
+      count: this.state.count + 1
+    });
+  }
+  fileChange(file) {
+    console.log("file", file.nativeEvent);
   }
   render() {
     return (
-      <div>
-           <World />             Hello World!          
+      <div onClick={this.handleClick}>
+           <World />             Hello World!   {this.state.count}
+        <input type="file" onChange={this.fileChange} name="" id="" />
       </div>
     );
   }
