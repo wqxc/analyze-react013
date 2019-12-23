@@ -4,15 +4,27 @@ class World extends React.Component {
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
+    this.state = {
+      count: 1
+    };
   }
   handleClick() {
     console.log("world");
+    this.setState({
+      count: 12
+    });
+    this.setState({
+      count: 123
+    });
+    this.setState({
+      count: 1234
+    });
   }
   render() {
     return (
-      <div>
-        <div>this is world</div>
-        <World1 />
+      <div onClick={this.handleClick}>
+        <div>this is world {this.state.count}</div>
+        {/* <World1 /> */}
       </div>
     );
   }
