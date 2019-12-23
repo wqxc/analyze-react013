@@ -1,5 +1,6 @@
 import React from "react";
 import World from "./world";
+import ReactDOM from "react-dom";
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -10,6 +11,7 @@ class App extends React.Component {
     };
   }
   handleClick() {
+    ReactDOM.render(<World />, document.getElementById("app1"));
     this.handleState();
     this.handleState();
     this.handleState();
@@ -19,6 +21,9 @@ class App extends React.Component {
       count: this.state.count + 1
     });
   }
+  handleClickAPP1() {
+    ReactDOM.render(<World1 />, document.getElementById("app1"));
+  }
   fileChange(file) {
     console.log("file", file.nativeEvent);
   }
@@ -27,6 +32,7 @@ class App extends React.Component {
       <div onClick={this.handleClick}>
            <World />             Hello World!   {this.state.count}
         <input type="file" onChange={this.fileChange} name="" id="" />
+        <div onClick={this.handleClickAPP1} id="app1"></div>
       </div>
     );
   }
