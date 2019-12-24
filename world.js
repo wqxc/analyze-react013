@@ -23,7 +23,7 @@ class World extends React.Component {
   render() {
     return (
       <div onClick={this.handleClick}>
-        <div>this is world {this.state.count}</div>
+        <div>this is world </div>
         {/* <World1 /> */}
       </div>
     );

@@ -1,5 +1,7 @@
 import React from "react";
+import World1 from "./world1";
 import World from "./world";
+import App1 from "./APP1";
 import ReactDOM from "react-dom";
 class App extends React.Component {
   constructor(props) {
@@ -11,7 +13,7 @@ class App extends React.Component {
     };
   }
   handleClick() {
-    ReactDOM.render(<World />, document.getElementById("app1"));
+    // ReactDOM.render(<World />, document.getElementById("app"));
     this.handleState();
     this.handleState();
     this.handleState();
@@ -22,17 +24,21 @@ class App extends React.Component {
     });
   }
   handleClickAPP1() {
-    ReactDOM.render(<World1 />, document.getElementById("app1"));
+    ReactDOM.render(<App1 />, document.getElementById("app"));
   }
   fileChange(file) {
     console.log("file", file.nativeEvent);
   }
   render() {
+    // return null;
     return (
       <div onClick={this.handleClick}>
-           <World />             Hello World!   {this.state.count}
-        <input type="file" onChange={this.fileChange} name="" id="" />
-        <div onClick={this.handleClickAPP1} id="app1"></div>
+        {/* <World /> */}
+        {/*    <World />             Hello World!   {this.state.count}
+        <input type="file" onChange={this.fileChange} name="" id="" /> */}
+        <div onClick={this.handleClickAPP1} id="app1">
+          切换到App1
+        </div>
       </div>
     );
   }
