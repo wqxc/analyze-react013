@@ -33,12 +33,14 @@ class App extends React.Component {
     // return null;
     return (
       <div onClick={this.handleClick}>
-        {/* <World /> */}
-        {/*    <World />             Hello World!   {this.state.count}
+        this is app
+        <World />
+        {/* <World />
+                      this is app   {this.state.count}
         <input type="file" onChange={this.fileChange} name="" id="" /> */}
-        <div onClick={this.handleClickAPP1} id="app1">
+        {/* <div onClick={this.handleClickAPP1} id="app1">
           切换到App1
-        </div>
+        </div> */}
       </div>
     );
   }
