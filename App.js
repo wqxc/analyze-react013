@@ -33,8 +33,7 @@ class App extends React.Component {
     // return null;
     return (
       <div onClick={this.handleClick}>
-        this is app
-        <World />
+        <World1 />
         {/* <World />
                       this is app   {this.state.count}
         <input type="file" onChange={this.fileChange} name="" id="" /> */}

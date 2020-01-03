@@ -1,5 +1,5 @@
 var config = {
-  mode:'development',
+  mode: "development",
   entry: "./main.js",
   output: {
     path: "./build",
@@ -18,6 +18,11 @@ var config = {
         query: {
           presets: ["es2015", "react"]
         }
+      },
+      {
+        test: /.css?$/,
+        exclude: /node_modules/,
+        loaders: ["style-loader", "css-loader"]
       }
     ]
   }
